@@ -1,0 +1,387 @@
+body{
+  font-family: "Dancing Script", cursive;
+
+}
+
+
+.container {
+    background-color: #f8f9fa; 
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #0056b3; /* Bootstrap primary color */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Adjust the color to match your design */
+    border: none;
+  }
+  
+
+
+  .carousel-item img {
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100vh ;
+    margin-top: 80px;
+    
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-top: 25px;
+}
+.carousel-caption p{
+   width: 60%;
+   margin: auto;
+   font-size: 18px;
+   line-height: 1.9;
+   
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+ }
+
+ .service-card {
+    margin-bottom: 30px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    height: 300px; /* Ajustez la hauteur selon le contenu */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+  }
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  /* Ajoutez un fond sombre pour améliorer la lisibilité du texte */
+.service-card:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+.service-card * {
+    position: relative;
+}
+
+.Nous:first-letter{
+    font-size: 70px;
+    color: red;
+    font-weight: bold;
+}
+
+.service-card {
+  margin-bottom: 50px;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+}
+.service-card .card-img-top {
+  height: 200px; /* ou votre hauteur personnalisée */
+  object-fit: cover; /* assurez-vous que l'image couvre bien la zone sans être déformée */
+}
+.service-card .card-body {
+  background-color: #eeeeee; /* couleur de fond pour le texte */
+  padding: 20px;
+}
+.service-card .card-body h5 {
+  color: #0056b3; /* couleur pour le titre du service */
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family:Arial;
+}
+.service-card .card-body p {
+  color: #333; /* couleur pour le texte de description */
+}
+.service-card .card-body:before {
+  content: ''; /* pour la barre de couleur */
+  display: block;
+  height: 14px;
+  background-color: #0056b3; /* couleur de la barre */
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition douce pour l'effet de survol */
+}
+
+/* Lorsque l'utilisateur survole la carte avec la souris */
+.card:hover {
+  transform: scale(1.05); /* Agrandir légèrement la carte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajouter une ombre pour un effet de profondeur */
+}
+
+.card-hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
+  color: #fff; /* Couleur du texte */
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+/* Modifier l'opacité et autres styles lors du survol */
+
+
+/* Cacher le texte par défaut */
+.card .card-hover-text {
+  visibility: hidden;
+}
+
+/* Afficher le texte lors du survol */
+.card:hover .card-hover-text {
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container2 {
+  padding: 30px;
+  background-color: #365491; /* Bleu foncé pour correspondre à votre image */
+  color: white;
+  margin: 10px;
+  background:linear-gradient(blue,yellow)
+  colorbe
+}
+
+h3.text-center {
+  margin-bottom: 15px;
+  color: #efefef;
+}
+
+.form-control {
+  border: 2px solid white;
+  color: #333;
+}
+
+
+.footer .btn-light {
+  color: #333; /* Couleur du texte pour contraster avec le bouton clair */
+}
+
+.footer .form-control {
+  border: 2px solid #fff; /* Bordure blanche pour l'input */
+  background-color: transparent; /* Fond transparent pour l'input */
+  color: #fff; /* Texte blanc pour l'input */
+}
+
+.footer .form-control::placeholder {
+  color: #fff; /* Couleur du placeholder en blanc */
+}
+
+.footer .form-control:focus {
+  color: #12a3c4; /* Couleur du texte lors de la saisie */
+  background-color: #fff; /* Fond blanc lors de la saisie */
+}
+
+
+/* formulaire devis */
+#devisForm .form-control-lg {
+  border-radius: 0.2px; /* Des bordures arrondies pour les champs de saisie */
+  background-color: #f8f9fa; /* Une couleur de fond légère pour les champs */
+}
+
+#devisForm .btn-primary {
+  border-radius: 0.75rem; /* Bordures arrondies pour le bouton */
+  background-image: linear-gradient(to right,  #0648ff,#87d5ff ); /* Un dégradé pour le bouton */
+  border: none; 
+}
+
+#devisForm .btn-primary:hover {
+  background-image: linear-gradient(to right,#4505f6 ,#07fde8 ); /* Un dégradé plus foncé au survol */
+}
+
+.card {
+  border-radius: 40px; /* Bordures arrondies pour la carte */
+  width: 110%;
+}
+
+.card-title {
+  font-weight: 700; /* Titre de la carte en gras */
+}
+
+.card-body {
+  background-color: #670909; /* Fond blanc pour le corps de la carte */
+}
+
+
+/* contactez nous */
+#contact-info {
+  background-color: #f8f9fa;
+  color: #333;
+  overflow: hidden;
+}
+
+.contact-title {
+  color: #0056b3;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.contact-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50%;
+  background-color: #0056b3;
+}
+
+.contact-details {
+  background: white;
+  padding: 2cm;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+height: 100%;}
+
+.contact-details:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transform: translateY(-20px);
+  background-color: #dceff4;
+}
+
+.info-item {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.icon-holder {
+  width: 25px;
+  text-align: center;
+  margin-right: 10px;
+  color: #0056b3;
+}
+
+img.img-fluid {
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+img.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+
+/* temoi */
+#testimonials {
+  background-color: #eef4f7; /* Une couleur d'arrière-plan douce */
+  padding: 60px 0;
+  text-align: center;
+}
+
+#testimonials h2 {
+  color: #007bff; /* Une couleur de titre dynamique */
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Ombre subtile pour le titre */
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 150%;
+  height: 100%;
+ 
+  transition: all 0.6s ease;
+}
+
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.client-name {
+  font-weight: bold;
+  color: #007bff; /* Couleur coordonnée avec le titre */
+  margin-top: 15px;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+
+/* icone*/
+.fab {
+  font-size: 30px; /* Taille de l'icône */
+  color: #f9f9fa; /* Couleur de l'icône, par exemple, bleu pour Facebook */
+  margin-right: 10px; /* Espacement entre les icônes */
+}
+
+/* Couleur spécifique pour l'icône WhatsApp */
+.fa-whatsapp {
+  color: #25D366;
+}
+
+
+/* scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+  background-color:white;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#0056b3;
+}
+
+

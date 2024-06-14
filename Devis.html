@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+
+
+    <link rel="stylesheet" href="E/C.css">
+    <title>S/E-C</title>
+
+    
+    
+</head>
+<body>
+
+    <!--BALISE NAVBAR BOOSTRAP -->
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top" >
+      <a href="htpps://" class="navbar-brand text white">
+          <img src="logo 2.jpg" width="100" height="50" alt="">
+        </a>
+      <a class="navbar-brand " href="#"><span class="text-primary">PowerCool </span><span class="text-danger" >Tech  </span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav  ms-auto mb-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" href="Projet Electrique clim.html" >Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item  active">
+                  <a class="nav-link" href="#2">À propos</a>
+              </li>
+              <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#3">Installation électrique</a>
+                      <a class="dropdown-item" href="#4">Maintenance électrique</a>
+                      <a class="dropdown-item" href="#5">Installation de systèmes de climatisation</a>
+                      <a class="dropdown-item" href="#6">Entretien de climatiseurs</a>
+                  </div>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="Devis.html">Devis Gratuit</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="Contactez-Nous.html">Contactez-Nous</a>
+              </li>
+              
+          </ul>
+      </div>
+  </nav>
+
+  
+ <!-- Devis -->
+
+ 
+ 
+  
+
+ <div class="container3 my-5">
+    
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-5">
+                    <h2 class="card-title text-center text-uppercase text-primary mb-4">Demandez votre Devis Personnalisé</h2>
+                    <form id="devisForm" onsubmit="envoyerFormulaire(event)">
+                        <div class="form-row">
+                            
+                            <div class="form-group col-md-6">
+                                <label for="inputName" class="text-secondary">Nom Complet</label>
+                                <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Jean Dupont" required>
+                                
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail" class="text-secondary">Email</label>
+                                <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="jean.dupont@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputService" class="text-secondary">Choisissez le Service</label>
+                            <select id="inputService" class="form-control form-control-lg">
+                                <option selected>Installation Électrique</option>
+                                <option>Maintenance Électrique</option>
+                                <option>Installation de Climatisation</option>
+                                <option>Entretien de Climatiseurs</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage" class="text-secondary">Message (optionnel)</label>
+                            <textarea class="form-control form-control-lg" id="inputMessage" rows="4" placeholder="Des détails supplémentaires..."required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Envoyer la Demande</button>
+                    </form>
+                    <div id="confirmationMessage" class="alert alert-success alert-dismissible fade show" style="display: none;" role="alert">
+                        Votre demande a été envoyée avec succès!
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
+ 
+<footer class="footer bg-danger text-light py-5">
+  <div class="container2">
+      <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0"  style="color: #efefef;">
+              <h1>PowerCool</h1>
+              <p><strong>Adresse</strong><br>Abatta en face du groupe scolaire primus (100m)</p>
+              <p><strong>Téléphones</strong><br>+2252534009841<br>+2250748156408</p>
+              <p><strong>Email</strong><br>info@sc-digital.org</p>
+              <p><strong>Réseaux</strong><br>
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0" style="color: #efefef;">
+              <h1>Liens</h1>
+              <ul class="list-unstyled">
+                  <li><a href="#2" class="text-white py-2 d-block">À propos</a></li>
+                  <li><a href="#s" class="text-white py-2 d-block">Services</a></li>
+                  <li><a href="Devis.html" class="text-white py-2 d-block">Devis gratuit</a></li>
+                  <li><a href="Contactez-Nous.html" class="text-white py-2 d-block">Contactez-nous</a></li>
+              </ul>
+          </div>
+          <!-- Vous pouvez ajouter une autre colonne ici si nécessaire -->
+          <div class="col-md-4">
+            <h3 class="text-center">Planifiez votre entretien </h3>
+            <form>
+                <div class="form-row align-items-center justify-content-center">
+                    <div class="col-auto">
+                        <input type="email" class="form-control mb-2" id="inlineFormInput" placeholder="Adresse E-mail">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-light mb-2">S'INSCRIRE</button>
+                    </div>
+                </div>
+            </form>
+            <div id="confirmationMessage" class="alert alert-success alert-dismissible fade show" style="display: none;" role="alert">
+                <span class="fas fa-check-circle me-2"></span>
+                Votre demande a été envoyée avec succès!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+        </div>
+        
+      </div>
+      <div class="text-center mt-4">
+        <a href="Devis.html" class="btn btn-primary">Obtenir un devis gratuit</a>
+      </div>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script>
+  function envoyerFormulaire(event) {
+    // Empêcher le comportement par défaut du formulaire (rechargement de la page)
+    event.preventDefault();
+
+    // Afficher le message de confirmation
+    document.getElementById("confirmationMessage").style.display = "block";
+
+    // Réinitialiser les champs du formulaire après quelques secondes
+    setTimeout(() => {
+        document.getElementById("devisForm").reset();
+        document.getElementById("confirmationMessage").style.display = "none";
+
+        // Actualiser la page
+        location.reload();
+    }, 3000); // 3000 millisecondes (3 secondes)
+    
+    // Vous pouvez également ajouter ici le code pour envoyer les données du formulaire à votre serveur si nécessaire.
+    // Par exemple, en utilisant AJAX pour une soumission asynchrone.
+}
+
+</script>
+
+
+</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

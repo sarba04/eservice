@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Devis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            
+        }
+
+        .container3 {
+            text-align: center;
+        }
+
+        .card {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container3 my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-5">
+                    <h2 class="card-title text-center text-uppercase text-primary mb-4">Demandez votre Devis Personnalisé</h2>
+                    <form id="devisForm" onsubmit="envoyerFormulaire(event)">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName" class="text-secondary">Nom Complet</label>
+                                <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Jean Dupont">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail" class="text-secondary">Email</label>
+                                <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="jean.dupont@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputService" class="text-secondary">Choisissez le Service</label>
+                            <select id="inputService" class="form-control form-control-lg">
+                                <option selected>Installation Électrique</option>
+                                <option>Maintenance Électrique</option>
+                                <option>Installation de Climatisation</option>
+                                <option>Entretien de Climatiseurs</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage" class="text-secondary">Message (optionnel)</label>
+                            <textarea class="form-control form-control-lg" id="inputMessage" rows="4" placeholder="Des détails supplémentaires..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Envoyer la Demande</button>
+                    </form>
+                    <div id="confirmationMessage" style="display: none; margin-top: 20px;" class="text-success">
+                        Votre demande a été envoyée avec succès!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function envoyerFormulaire(event) {
+        // Empêcher le comportement par défaut du formulaire (rechargement de la page)
+        event.preventDefault();
+
+        // Afficher le message de confirmation
+        document.getElementById("confirmationMessage").style.display = "block";
+
+        // Réinitialiser les champs du formulaire après quelques secondes
+        setTimeout(() => {
+            document.getElementById("devisForm").reset();
+            document.getElementById("confirmationMessage").style.display = "none";
+        }, 3000); // 3000 millisecondes (3 secondes)
+        
+        // Vous pouvez également ajouter ici le code pour envoyer les données du formulaire à votre serveur si nécessaire.
+        // Par exemple, en utilisant AJAX pour une soumission asynchrone.
+    }
+</script>
+
+</body>
+</html>

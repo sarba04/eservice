@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Page modele en Javascript</title>
+<script language="javascript">
+document.write ("bonjour");
+
+
+document.write("Mettre le code ici");
+
+
+var i,j=0;
+    for (i=0;i<2;i++) {
+    alert("voici la valeur de mon premier compteur i: "+i);
+     for (j=0;j<2;j++) {
+     alert("voici la valeur de mon deuxième compteur j: "+j);
+     }
+    }
+
+
+function controle() {
+with (document.form1.nom) {
+value="premiere valeur";
+alert(value);
+value="nouvelle valeur";
+alert(value);
+}
+}
+
+
+alert("Ceci est une boîte de dialogue affichée \n sur 2 lignes");
+
+
+confirm("ok = 0, Annuler = 1");
+
+
+var reponse=window.confirm("ok = true, Annuler = false");
+alert("la valeur de la variable réponse est : "+reponse);
+</script>
+<script language="javascript">
+    nom=prompt("Quel est votre nom ?", "Saisir votre nom ici");
+    prenom=prompt("Quel est votre prenom ?", "Saisir votre prenom ici");
+    alert("Votre nom complet est : \r"+nom+"\r "+prenom);
+    </script>
+
+
+<script language="javascript">
+    constante_numerique=1.45226;
+    constante_texte1="ma constante texte";
+    constante_texte2="ma constante texte";
+    constante_texte3="1.45226";
+    constante_texte4="Je suis d\’accord";
+    constante_chaine_vide=""
+    constante_infinie=7.6E+333*6.7E+333;
+    constante_nombre="ceci n’est pas un nombre";
+    constante_indefinie= undefined;
+    document.write ("Voici ma constante numérique : "+constante_numerique+"<BR>");
+    document.write ("Voici ma constante texte1 : "+constante_texte1+"<BR>");
+    document.write ("Voici ma constante texte2 :"+constante_texte2+"<BR>");
+    document.write ("Voici ma constante texte3 :"+constante_texte3+"<BR>");
+    document.write ("Voici ma constante texte4 :"+constante_texte4+"<BR>");
+    document.write ("Voici ma constante chaîne vide :"+constante_chaine_vide+"<BR>");
+    document.write ("Voici ma constante infinie :"+constante_infinie+"<BR>");
+    document.write ("Ma constante est-elle un nombre :"+isNaN(constante_nombre)+"<BR>");
+    document.write ("Voici la constante_indefinie :"+constante_indefinie);
+
+
+  
+a=5; b=0;
+resultat=a/b;
+alert(resultat);
+</script>
+
+</head>
+<body>
+    <form name="form1" method="post" action="">
+        <p>
+        <input name="nom" type="text" id="nom">
+       </p>
+        <p>
+            <input type="button" name="Submit" value="Bouton" onClick="controle()">
+        </p>
+        </form>
+
+
+</body>
+</html>
